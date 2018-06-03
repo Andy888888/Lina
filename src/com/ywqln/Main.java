@@ -1,11 +1,19 @@
 package com.ywqln;
 
-import ui.MainActivity;
+import pattern.factory.TrafficAnswer;
+import pattern.factoryna.StaffMain;
+import pattern.singleton.Eat;
 
 public class Main {
-
     public static void main(String[] args) {
-        MainActivity activity = new MainActivity();
-        activity.start();
+        // 模拟android控件
+//        new MainActivity().start();
+        // 面向对象的例子
+//        new MainClass().start();
+//        new TTTT().start();
+//        new Eat().start();
+
+//        new TrafficAnswer().start();
+        new StaffMain().start();
     }
 }

@@ -17,10 +17,13 @@ public class MainActivity extends MainLaunch implements View.OnClickListener {
         // 把本类当作接口实现对象传递给button
         button.setOnclickListener(this);
         // 匿名类方式
-        button.setOnclickListener(view -> {
-            Button button1 = (Button) view;
-            String outInfo = String.format(Locale.CHINA, "Text:%s", button1.getText());
-            System.out.print(outInfo);
+        button.setOnclickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Button button1 = (Button) view;
+                String outInfo = String.format(Locale.CHINA, "Text:%s", button1.getText());
+                System.out.print(outInfo);
+            }
         });
         button.press();
     }
