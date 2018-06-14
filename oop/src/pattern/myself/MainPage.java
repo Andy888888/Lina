@@ -3,6 +3,7 @@ package pattern.myself;
 import core.MainLaunch;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,20 +17,17 @@ public class MainPage extends MainLaunch {
     @Override
     public void start() {
 
-        String command = "yuancui/QRCodeLogin/token";
+//        String command = "yuancui/QRCodeLogin/token";
 //        String command = "yuancui/webview/token";
 //        String command = "yuancui/turnKey/token";
+        String command = "yuancui/activity/token";
 
-        ActivitiesExecutor activitiesExecutor = new ActivitiesExecutor();
-        LoginExecutor loginExecutor = new LoginExecutor();
-        OperationKeyExecutor operationKeyExecutor = new OperationKeyExecutor();
-        WebViewExecutor webViewExecutor = new WebViewExecutor();
-
-        List<AbsExecutor> executorList = new ArrayList<>();
-        executorList.add(activitiesExecutor);
-        executorList.add(loginExecutor);
-        executorList.add(operationKeyExecutor);
-        executorList.add(webViewExecutor);
+        // 这种实例化方式，List的长度是固定的，不能再add新的项目
+        List<AbsExecutor> executorList = Arrays.asList(
+                new ActivitiesExecutor(),
+                new LoginExecutor(),
+                new OperationKeyExecutor(),
+                new WebViewExecutor());
 
         for (AbsExecutor executor : executorList) {
             if (executor.isMatch(command)) {
