@@ -2,6 +2,7 @@ package com.ywqln;
 
 import pattern.factory.TrafficAnswer;
 import pattern.factoryna.StaffMain;
+import pattern.myself.MainPage;
 import pattern.singleton.Eat;
 
 public class Main {
@@ -14,6 +15,7 @@ public class Main {
 //        new Eat().start();
 
 //        new TrafficAnswer().start();
-        new StaffMain().start();
+//        new StaffMain().start();
+        new MainPage().start();
     }
 }

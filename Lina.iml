@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="fakeandroid" />
-    <orderEntry type="module" module-name="base" />
-    <orderEntry type="module" module-name="oop" />
+    <orderEntry type="module" module-name="fakeandroid" exported="" />
+    <orderEntry type="module" module-name="base" exported="" />
+    <orderEntry type="module" module-name="oop" exported="" />
   </component>
 </module>

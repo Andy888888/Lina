@@ -13,7 +13,7 @@ public class StaffMain extends MainLaunch {
     @Override
     public void start() {
         StaffFactory staffFactory = new StaffFactory();
-        Staff staff = staffFactory.create(StaffFactory.StaffType.IOSDEVELOPER);
+        Staff staff = staffFactory.create(StaffFactory.StaffType.UIDEVELOPER);
         System.out.println(staff.work());
     }
 }
