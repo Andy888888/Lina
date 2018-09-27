@@ -10,7 +10,8 @@ package pattern.myself;
 public class WebViewExecutor extends AbsExecutor {
     @Override
     public void work(String command) {
-        print("正常加载网页");
+        getParam(command);
+        print("正常加载网页：" + params);
     }
 
     @Override

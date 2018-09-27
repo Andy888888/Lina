@@ -11,7 +11,8 @@ public class ActivitiesExecutor extends AbsExecutor {
 
     @Override
     public void work(String command) {
-        print("有节日活动喽");
+        getParam(command);
+        print(String.format("有%s节日活动喽", params));
     }
 
     @Override

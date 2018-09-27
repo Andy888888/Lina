@@ -8,6 +8,6 @@ package pattern.factory;
 public class Subway extends Traffic {
     @Override
     public String go() {
-        return "请走5号线，倒10号线";
+        return "请走13号线，换乘2号线";
     }
 }

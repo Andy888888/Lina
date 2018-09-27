@@ -11,6 +11,7 @@ public class LoginExecutor extends AbsExecutor {
 
     @Override
     public void work(String command) {
+        getParam(command);
         print("扫描二维码登录");
     }
 

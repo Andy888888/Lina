@@ -10,7 +10,8 @@ package pattern.myself;
 public class OperationKeyExecutor extends AbsExecutor {
     @Override
     public void work(String command) {
-        print("转交钥匙");
+        getParam(command);
+        print(String.format("转交%s钥匙", params));
     }
 
     @Override
