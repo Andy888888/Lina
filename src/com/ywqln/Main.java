@@ -10,6 +10,7 @@ import pattern.myself.MainPage;
 import pattern.singleton.Eat;
 import pattern.singleton.MainClass;
 import pattern.singleton.TTTT;
+import removeball.MainBall;
 import string.Reversal;
 import ui.MainActivity;
 
@@ -26,13 +27,17 @@ public class Main {
 //        new Eat().start();
 //        new TrafficAnswer().start();
 //        new StaffMain().start();
-        new MainPage().start();
+//        new MainBall().start();
 
 
-        new Login().start();
+//        new Login().start();
 //        new Remove().start();
 //        new Reversal().start();
 //        new FindMax().start();
 //        new Sort().start();
+
+        new MainBall().start();
+
+
     }
 }
