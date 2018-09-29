@@ -63,6 +63,9 @@ public class MainBall extends MainLaunch {
             if (colorLast.equals(colorFront)) {
                 balls.remove(i);
                 balls.remove(i - 1);
+                // 消除后，再重新开始一轮检查。如果没有这一步，将会出现这样的结果：
+                // 红蓝红蓝蓝红 --> 红蓝红红 --> 红蓝红红
+                // 加上下面代码后才是正确结果：红蓝红蓝蓝红 --> 红蓝红红 --> 红蓝
                 i = balls.size();
             }
         }
