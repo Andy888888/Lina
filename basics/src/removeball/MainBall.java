@@ -13,7 +13,7 @@ import java.util.Random;
  * @author yanwenqiang
  * @date 2018/9/28
  */
-public class MainBall extends MainLaunch {
+public class MainBall extends MainLaunch implements BallColor {
 
     private static ArrayList<Ball> ballList;
 
@@ -27,7 +27,7 @@ public class MainBall extends MainLaunch {
 
     @Override
     public void start() {
-
+        List<String> list = new ArrayList();
         // 进行10轮
         for (int i = 0; i < 10; i++) {
             ArrayList<Ball> balls = new ArrayList<>();
@@ -57,10 +57,9 @@ public class MainBall extends MainLaunch {
             if (balls.size() <= 1) {
                 break;
             }
-            String colorLast = balls.get(i).getColor();
-            String colorFront = balls.get(i - 1).getColor();
 
-            if (colorLast.equals(colorFront)) {
+            boolean equals = BallColor.equalsColor(balls.get(i),balls.get(i-1));
+            if (equals) {
                 balls.remove(i);
                 balls.remove(i - 1);
                 // 消除后，再重新开始一轮检查。如果没有这一步，将会出现这样的结果：
