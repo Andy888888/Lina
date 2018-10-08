@@ -27,7 +27,6 @@ public class MainBall extends MainLaunch implements BallColor {
 
     @Override
     public void start() {
-        List<String> list = new ArrayList();
         // 进行10轮
         for (int i = 0; i < 10; i++) {
             ArrayList<Ball> balls = new ArrayList<>();
