@@ -8,5 +8,5 @@ package core;
  * @date 2018/6/1
  */
 public abstract class MainLaunch {
-    public abstract void start();
+    public abstract void start() throws InterruptedException;
 }

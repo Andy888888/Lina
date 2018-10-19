@@ -1,21 +1,6 @@
 package com.ywqln;
 
-import arraylist.FindMax;
-import arraylist.Login;
-import arraylist.Remove;
-import arraylist.Sort;
-import pattern.factory.TrafficAnswer;
-import pattern.factoryna.StaffMain;
-import pattern.myself.MainPage;
-import pattern.singleton.Eat;
-import pattern.singleton.MainClass;
-import pattern.singleton.TTTT;
-import removeball.MainBall;
-import string.Reversal;
-import ui.MainActivity;
-
-import java.util.ArrayList;
-import java.util.List;
+import thread.ChiBaoZi;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,8 +21,11 @@ public class Main {
 //        new FindMax().start();
 //        new Sort().start();
 
-        new MainBall().start();
-
-
+//        new MainBall().start();
+//        new ToString().start();
+//        new ThreadExc().start();
+//        new ThreadSafe().start();
+//        new WaitNotify().start();
+        new ChiBaoZi().start();
     }
 }

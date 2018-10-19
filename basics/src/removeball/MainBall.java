@@ -3,7 +3,6 @@ package removeball;
 import core.MainLaunch;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -57,7 +56,7 @@ public class MainBall extends MainLaunch implements BallColor {
                 break;
             }
 
-            boolean equals = BallColor.equalsColor(balls.get(i),balls.get(i-1));
+            boolean equals = BallColor.equalsColor(balls.get(i), balls.get(i - 1));
             if (equals) {
                 balls.remove(i);
                 balls.remove(i - 1);
