@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import thread.ChiBaoZi;
+import lambda.LambdaTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +26,10 @@ public class Main {
 //        new ThreadExc().start();
 //        new ThreadSafe().start();
 //        new WaitNotify().start();
-        new ChiBaoZi().start();
+//        new ChiBaoZi().start();
+
+//        new MainPool().start();
+//        new LambdaMain().start();
+        new LambdaTest().start();
     }
 }

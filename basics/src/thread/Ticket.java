@@ -39,9 +39,7 @@ public class Ticket implements Runnable {
 
     @Override
     public synchronized void run() {
-        // 同步代码，互斥
         while (ticket > 0) {
-            //有票 可以卖 //出票操作使用sleep模拟一下出票时间
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {

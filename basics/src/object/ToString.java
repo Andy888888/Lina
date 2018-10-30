@@ -30,7 +30,7 @@ public class ToString extends MainLaunch {
 //    public void start() {
 ////        System.out.print("CC " + this);
 //
-//        LinkedList<String> resultList = new LinkedList<>();
+//        Linked<String> resultList = new Linked<>();
 //        String[] arr = {"a","b","a"};
 //        for (int i = 0; i < arr.length; i++) {
 //            if(!resultList.contains(arr[i])){
@@ -49,7 +49,7 @@ public class ToString extends MainLaunch {
     @Override
     public void start() {
 
-//        LinkedList<String> resultList = new LinkedList<>();
+//        Linked<String> resultList = new Linked<>();
 //        String[] arr = {"a", "b", "a"};
 //        for (int i = 0; i < arr.length; i++) {
 //            if (!resultList.contains(arr[i])) {

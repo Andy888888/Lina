@@ -22,7 +22,6 @@ public class LockTicket implements Runnable {
                 try {
                     Thread.sleep(50);
                 } catch (InterruptedException e) {
-                    // TODO Auto‐generated catch block
                     e.printStackTrace();
                 }
                 String name = Thread.currentThread().getName();
