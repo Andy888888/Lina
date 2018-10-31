@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import lambda.LambdaTest;
+import pattern.webview.WebViewMainLaunch;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +30,6 @@ public class Main {
 
 //        new MainPool().start();
 //        new LambdaMain().start();
-        new LambdaTest().start();
+        new WebViewMainLaunch().start();
     }
 }
