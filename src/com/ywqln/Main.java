@@ -2,6 +2,13 @@ package com.ywqln;
 
 import pattern.webview.WebViewMainLaunch;
 
+/**
+ * 描述:应用程序入口
+ * <p>
+ *
+ * @author yanwenqiang.
+ * @date 2018/6/3
+ */
 public class Main {
     public static void main(String[] args) {
         // 模拟android控件

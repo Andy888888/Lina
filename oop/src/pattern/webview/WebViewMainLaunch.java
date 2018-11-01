@@ -3,7 +3,7 @@ package pattern.webview;
 import core.MainLaunch;
 
 /**
- * 描述:待描述.
+ * 描述:WebViewFilter Demo.
  * <p>
  *
  * 输入一个字符串，拦截字符串并做处理。例如：包含“savePic”就打印“保存图片”；

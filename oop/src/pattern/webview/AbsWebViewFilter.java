@@ -3,7 +3,7 @@ package pattern.webview;
 import java.util.List;
 
 /**
- * 描述:待描述.
+ * 描述:WebViewFilter 抽象类.
  * <p>
  *
  * @author yanwenqiang.
@@ -31,7 +31,7 @@ public abstract class AbsWebViewFilter {
             }
         }
 
-        return false;
+        return true;
     }
 
     interface Interceptor {

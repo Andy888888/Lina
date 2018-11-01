@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 描述:待描述.
+ * 描述:WebViewFilter.
  * <p>
  *
  * @author yanwenqiang.
@@ -31,7 +31,7 @@ public class WebViewFilter extends AbsWebViewFilter {
 
             @Override
             public boolean isLoad() {
-                return true;
+                return false;
             }
         });
 

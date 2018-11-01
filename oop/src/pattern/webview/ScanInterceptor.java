@@ -1,7 +1,7 @@
 package pattern.webview;
 
 /**
- * 描述:待描述.
+ * 描述:扫描二维码拦截器.
  * <p>
  *
  * @author yanwenqiang.
@@ -22,6 +22,6 @@ public class ScanInterceptor implements AbsWebViewFilter.Interceptor {
 
     @Override
     public boolean isLoad() {
-        return false;
+        return true;
     }
 }
