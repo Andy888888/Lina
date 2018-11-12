@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import pattern.webview.WebViewMainLaunch;
+import jdbc.DBConnectionMain;
 
 /**
  * 描述:应用程序入口
@@ -37,6 +37,7 @@ public class Main {
 
 //        new MainPool().start();
 //        new LambdaMain().start();
-        new WebViewMainLaunch().start();
+//        new WebViewMainLaunch().start();
+        new DBConnectionMain().start();
     }
 }

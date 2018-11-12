@@ -7,10 +7,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="fakeandroid" exported="" />
-    <orderEntry type="module" module-name="base" exported="" />
-    <orderEntry type="module" module-name="oop" exported="" />
-    <orderEntry type="module" module-name="basics" />
-    <orderEntry type="module" module-name="sql" />
+    <orderEntry type="module" module-name="base" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/mysql-connector-java-8.0.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
