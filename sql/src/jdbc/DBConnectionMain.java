@@ -19,7 +19,6 @@ public class DBConnectionMain extends MainLaunch {
         Connection connection = null;
         ResultSet resultSet = null;
         String sql = "select * from student";
-
         try {
             long start = System.currentTimeMillis();
             connection = jdbcUtil.getConnection();
@@ -30,7 +29,6 @@ public class DBConnectionMain extends MainLaunch {
             resultSet = statement.executeQuery(sql);
 //            PreparedStatement statement = connection.prepareStatement(sql);
 //            resultSet = statement.executeQuery();
-
 
             while (resultSet.next()) {
                 String name = resultSet.getString("sname");
