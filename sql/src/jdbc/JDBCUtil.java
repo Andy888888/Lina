@@ -47,7 +47,6 @@ public class JDBCUtil {
 
     public Connection getConnection() throws SQLException {
         connection = DriverManager.getConnection(url, user, password);
-        connection = DriverManager.getConnection(url);
         return connection;
     }
 
