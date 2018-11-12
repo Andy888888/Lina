@@ -38,7 +38,7 @@ public class JDBCUtil {
             Class.forName(driver);
             long end = System.currentTimeMillis();
             System.out.println("反射耗时：" + (end - start));
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import jdbc.DBConnectionMain;
+import reflect.ReflectMainLaunch;
 
 /**
  * 描述:应用程序入口
@@ -38,6 +38,8 @@ public class Main {
 //        new MainPool().start();
 //        new LambdaMain().start();
 //        new WebViewMainLaunch().start();
-        new DBConnectionMain().start();
+
+//        new DBConnectionMain().start();
+        new ReflectMainLaunch().start();
     }
 }
