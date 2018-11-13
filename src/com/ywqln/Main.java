@@ -1,5 +1,6 @@
 package com.ywqln;
 
+import jdbc.DBConnectionMain;
 import reflect.ReflectMainLaunch;
 
 /**
@@ -10,6 +11,7 @@ import reflect.ReflectMainLaunch;
  * @date 2018/6/3
  */
 public class Main {
+
     public static void main(String[] args) {
         // 模拟android控件
 //        new MainActivity().start();
@@ -39,7 +41,10 @@ public class Main {
 //        new LambdaMain().start();
 //        new WebViewMainLaunch().start();
 
-//        new DBConnectionMain().start();
+        new DBConnectionMain().start();
+
+
         new ReflectMainLaunch().start();
+
     }
 }

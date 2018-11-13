@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- * 描述:待描述.
+ * 描述:JDBCUtil.
  * <p>
  *
  * @author yanwenqiang.
@@ -18,6 +18,7 @@ public class JDBCUtil {
     private String url;
     private String user;
     private String password;
+    private Connection connection;
 
     public JDBCUtil() {
         Properties prop = new Properties();
@@ -42,8 +43,6 @@ public class JDBCUtil {
             e.printStackTrace();
         }
     }
-
-    private Connection connection;
 
     public Connection getConnection() throws SQLException {
         connection = DriverManager.getConnection(url, user, password);
