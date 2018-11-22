@@ -30,10 +30,10 @@ public class ReflectMainLaunch extends MainLaunch {
 
     private void run() {
         Properties prop = new Properties();
-        prop.clear();
         //加载配置文件
         try {
             prop.load(this.getClass().getResourceAsStream("traffic.txt"));
+//            prop.load(this.getClass().getClassLoader().getResource("~/Desktop/Github/Organization/ywqln/Lina/basics/src/reflect/traffic.txt").openStream());
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,7 +1,6 @@
 package com.ywqln;
 
-import jdbc.DBConnectionMain;
-import reflect.ReflectMainLaunch;
+import pattern.template.AndroidRun;
 
 /**
  * 描述:应用程序入口
@@ -14,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         // 模拟android控件
-//        new MainActivity().start();
+//        new AndroidRun().start();
 //         面向对象的例子
 //        new MainClass().start();
 //        new TTTT().start();
@@ -41,10 +40,11 @@ public class Main {
 //        new LambdaMain().start();
 //        new WebViewMainLaunch().start();
 
-        new DBConnectionMain().start();
+//        new DBConnectionMain().start();
 
 
-        new ReflectMainLaunch().start();
+//        new ReflectMainLaunch().start();
+        new AndroidRun().start();
 
     }
 }
