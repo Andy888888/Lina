@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import reflect.ReflectMainLaunch;
+import integer.MaxValuePlus;
 
 /**
  * 描述:应用程序入口
@@ -40,6 +40,22 @@ public class Main {
 //        new WebViewMainLaunch().start();
 
 //        new DBConnectionMain().start();
-        new ReflectMainLaunch().start();
+//        new Connect().start();
+
+//        new IntegerTest().start();
+
+
+        new MaxValuePlus().start();
+
+
+//        while (true){
+//            try {
+//                Thread.sleep(3000);
+//                new ReflectMainLaunch().start();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
     }
 }
