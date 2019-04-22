@@ -14,8 +14,7 @@ public class PrintStar extends MainLaunch {
     public void start() {
         String symbol = "😄";
         printStar(7, symbol, "  ");
-
-        printStar2(5, symbol, "  ");
+        printStar2(7, symbol, "  ");
 
     }
 
@@ -73,26 +72,25 @@ public class PrintStar extends MainLaunch {
             }
         }
 
-        arr[0][2] = symbol;
-        arr[1][2] = symbol;
-        arr[2][2] = symbol;
-        arr[3][2] = symbol;
-        arr[4][2] = symbol;
+        int half = row / 2;
+        for (int i = 0; i < row; i++) {
+            arr[i][half] = symbol;
+        }
 
-
-        arr[1][1] = symbol;
-        arr[2][1] = symbol;
-        arr[3][1] = symbol;
-
-        arr[1][3] = symbol;
-        arr[2][3] = symbol;
-        arr[3][3] = symbol;
-
-
-        arr[2][0] = symbol;
-
-        arr[2][4] = symbol;
-
+        int lIndex = 0;
+        int rIndex = row - 1;
+        int top = half - 1;
+        int botom = half + 1;
+        for (int i = 0; i < half; i++) {
+            lIndex++;
+            rIndex--;
+            for (int j = lIndex; j <= rIndex; j++) {
+                arr[j][top] = symbol;
+                arr[j][botom] = symbol;
+            }
+            top = top - 1;
+            botom = botom + 1;
+        }
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
