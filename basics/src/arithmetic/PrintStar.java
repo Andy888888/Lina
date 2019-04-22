@@ -12,10 +12,14 @@ import core.MainLaunch;
 public class PrintStar extends MainLaunch {
     @Override
     public void start() {
-        printStar(5);
+        String symbol = "😄";
+        printStar(7, symbol, "  ");
+
+        printStar2(5, symbol, "  ");
+
     }
 
-    private void printStar(int row) {
+    private void printStar(int row, String symbol, String empty) {
 
         /// 规律：
         /// 第一行打印1个，第二行打印3个，第三行打印5个
@@ -36,11 +40,11 @@ public class PrintStar extends MainLaunch {
             // 控制当前行打印
             for (int j = 0; j < row; j++) {
                 if (j >= start && j < end) {
-                    System.out.print("😄");
+                    System.out.print(symbol);
                     continue;
                 }
-                if(j < end){
-                    System.out.print("  ");
+                if (j < end) {
+                    System.out.print(empty);
                     continue;
                 }
                 break;
@@ -58,6 +62,43 @@ public class PrintStar extends MainLaunch {
                 rowCount -= 2;
             }
 
+        }
+    }
+
+    private void printStar2(int row, String symbol, String empty) {
+        String[][] arr = new String[row][row];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = empty;
+            }
+        }
+
+        arr[0][2] = symbol;
+        arr[1][2] = symbol;
+        arr[2][2] = symbol;
+        arr[3][2] = symbol;
+        arr[4][2] = symbol;
+
+
+        arr[1][1] = symbol;
+        arr[2][1] = symbol;
+        arr[3][1] = symbol;
+
+        arr[1][3] = symbol;
+        arr[2][3] = symbol;
+        arr[3][3] = symbol;
+
+
+        arr[2][0] = symbol;
+
+        arr[2][4] = symbol;
+
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
         }
     }
 }
