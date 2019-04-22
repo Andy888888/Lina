@@ -28,13 +28,14 @@ public class TestPaper extends MainLaunch {
         int count = symbols.size();
         for (int i = 0; i < count; i++) {
             int index = new Random().nextInt(symbols.size());
-            System.out.println(index + " / " + symbols.get(index));
             options[i].symbol = symbols.get(index);
             symbols.remove(index);
         }
 
-        int stop = 0;
 
+        for (int i = 0; i < options.length; i++) {
+            System.out.println(options[i]);
+        }
 
     }
 
@@ -79,6 +80,15 @@ public class TestPaper extends MainLaunch {
 
         public void setScore(int score) {
             this.score = score;
+        }
+
+        @Override
+        public String toString() {
+            return "Option{" +
+                    "symbol='" + symbol + '\'' +
+                    ", value='" + value + '\'' +
+                    ", score=" + score +
+                    '}';
         }
     }
 }
