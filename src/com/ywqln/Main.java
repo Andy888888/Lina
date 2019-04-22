@@ -1,6 +1,7 @@
 package com.ywqln;
 
 import integer.MaxValuePlus;
+import pattern.template.AndroidRun;
 
 /**
  * 描述:应用程序入口
@@ -10,9 +11,10 @@ import integer.MaxValuePlus;
  * @date 2018/6/3
  */
 public class Main {
+
     public static void main(String[] args) {
         // 模拟android控件
-//        new MainActivity().start();
+//        new AndroidRun().start();
 //         面向对象的例子
 //        new MainClass().start();
 //        new TTTT().start();
@@ -40,6 +42,7 @@ public class Main {
 //        new WebViewMainLaunch().start();
 
 //        new DBConnectionMain().start();
+
 //        new Connect().start();
 
 //        new IntegerTest().start();
@@ -56,6 +59,10 @@ public class Main {
 //                e.printStackTrace();
 //            }
 //        }
+
+
+//        new ReflectMainLaunch().start();
+        new AndroidRun().start();
 
     }
 }
