@@ -1,6 +1,7 @@
 package com.ywqln;
 
 import arithmetic.PrintStar;
+import arithmetic.TestPaper;
 import integer.MaxValuePlus;
 import pattern.template.AndroidRun;
 
@@ -52,7 +53,8 @@ public class Main {
 //        new AndroidRun().start();
 
 //        new MaxValuePlus().start();
-        new PrintStar().start();
+//        new PrintStar().start();
+        new TestPaper().start();
 
     }
 }
