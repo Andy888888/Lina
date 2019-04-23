@@ -2,6 +2,10 @@ package com.ywqln;
 
 import arithmetic.PrintStar;
 
+import arithmetic.TestPaper;
+import integer.MaxValuePlus;
+import pattern.template.AndroidRun;
+
 /**
  * 描述:应用程序入口
  * <p>
@@ -47,19 +51,18 @@ public class Main {
 
 //        new DBConnectionMain().start();
 
+//        new Connect().start();
+
+//        new IntegerTest().start();
 
 //        new ReflectMainLaunch().start();
 //        new AndroidRun().start();
 
 
-        new PrintStar().start();
+//        new MaxValuePlus().start();
+//        new PrintStar().start();
 
-
-//        String str1 = "helloworld";
-//        String str2 = new String("helloworld");
-//        System.out.println(str1 == str2);
-//        System.out.println(str1.equals(str2));
-
+        new TestPaper().start();
 
     }
 
