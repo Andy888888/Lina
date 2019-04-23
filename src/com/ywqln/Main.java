@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import pattern.template.AndroidRun;
+import arithmetic.PrintStar;
 
 /**
  * 描述:应用程序入口
@@ -11,7 +11,12 @@ import pattern.template.AndroidRun;
  */
 public class Main {
 
+    private void test() {
+
+    }
+
     public static void main(String[] args) {
+
         // 模拟android控件
 //        new AndroidRun().start();
 //         面向对象的例子
@@ -44,7 +49,19 @@ public class Main {
 
 
 //        new ReflectMainLaunch().start();
-        new AndroidRun().start();
+//        new AndroidRun().start();
+
+
+        new PrintStar().start();
+
+
+//        String str1 = "helloworld";
+//        String str2 = new String("helloworld");
+//        System.out.println(str1 == str2);
+//        System.out.println(str1.equals(str2));
+
 
     }
+
+
 }
