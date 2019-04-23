@@ -44,14 +44,14 @@ public class PrintStar extends MainLaunch {
 
             // 控制当前行打印
             for (int j = 0; j < row; j++) {
+                // 在开始打印前，用空格撑起
+                if (j < start) {
+                    System.out.print(empty);
+                    continue;
+                }
                 // 在应该打印的范围内就打印星星
                 if (j >= start && j < end) {
                     System.out.print(symbol);
-                    continue;
-                }
-                // 在开始打印前，用空格撑起
-                if (j < end) {
-                    System.out.print(empty);
                     continue;
                 }
                 // 如果打印结束索引后，就不需要打印空格了，直接跳出本循环体，以提高效率，开始换行打印下一行
