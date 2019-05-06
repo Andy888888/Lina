@@ -1,5 +1,6 @@
 package com.ywqln;
 
+import arithmetic.Permutation;
 import arithmetic.PrintStar;
 
 import arithmetic.TestPaper;
@@ -61,8 +62,8 @@ public class Main {
 
 //        new MaxValuePlus().start();
 //        new PrintStar().start();
-
-        new TestPaper().start();
+//        new TestPaper().start();
+        new Permutation().start();
 
     }
 
