@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author yanwenqiang.
  * @date 2018/9/26
  */
-public class Remove extends MainLaunch {
+public class RemoveIf extends MainLaunch {
 
     @Override
     public void start() {
@@ -24,11 +24,13 @@ public class Remove extends MainLaunch {
         dataList.add("人类是不一样的");
         dataList.add("各有所爱");
 
-        for (int i = dataList.size() - 1; i >= 0; i--) {
-            if (dataList.get(i).length() > 5) {
-                dataList.remove(i);
-            }
-        }
+//        for (int i = dataList.size() - 1; i >= 0; i--) {
+//            if (dataList.get(i).length() > 5) {
+//                dataList.remove(i);
+//            }
+//        }
+
+        dataList.removeIf(q -> q.length() > 5);
 
         for (String item : dataList) {
             System.out.println(item);

@@ -18,6 +18,27 @@ public class Permutation extends MainLaunch {
 //        permutation("abcd");
         method("hello####word##ni#hao#");
 //        method();
+
+
+        int a, b, c;
+        for (int i = 101; i < 1000; i++) {
+            a = i % 10;
+            b = i / 10 % 10;
+            c = i / 100;
+
+            if (a * a * a + b * b * b + c * c * c == i) {
+                System.out.println("a:" + a + " b:" + b + " c:" + c);
+                System.out.println(i);
+            }
+        }
+
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + "x" + j + "=" + i * j);
+                System.out.print(" ");
+            }
+            System.out.println("");
+        }
     }
 
     private void method() {

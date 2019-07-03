@@ -1,11 +1,6 @@
 package com.ywqln;
 
-import arithmetic.Permutation;
-import arithmetic.PrintStar;
-
-import arithmetic.TestPaper;
-import integer.MaxValuePlus;
-import pattern.template.AndroidRun;
+import arraylist.RemoveIf;
 
 /**
  * 描述:应用程序入口
@@ -34,7 +29,7 @@ public class Main {
 
 
 //        new Login().start();
-//        new Remove().start();
+        new RemoveIf().start();
 //        new Reversal().start();
 //        new FindMax().start();
 //        new Sort().start();
@@ -63,9 +58,10 @@ public class Main {
 //        new MaxValuePlus().start();
 //        new PrintStar().start();
 //        new TestPaper().start();
-        new Permutation().start();
+//        new Permutation().start();
+
+//        new MobileDecodeUtil().start();
 
     }
-
 
 }
