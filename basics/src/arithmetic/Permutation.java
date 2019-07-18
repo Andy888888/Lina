@@ -5,7 +5,7 @@ import core.MainLaunch;
 import java.util.*;
 
 /**
- * 描述:待描述.
+ * 描述:排序相关.
  * <p>
  *
  * @author yanwenqiang.

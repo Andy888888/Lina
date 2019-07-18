@@ -3,13 +3,13 @@ package string;
 import core.MainLaunch;
 
 /**
- * 描述：待描述
+ * 描述：引用对象方法中传递修改
  * <p>
  *
  * @author yanwenqiang
  * @date 2019/3/24
  */
-public class Connect extends MainLaunch {
+public class ReferenceObject extends MainLaunch {
     @Override
     public void start() {
         testObject();
@@ -37,8 +37,10 @@ public class Connect extends MainLaunch {
     private void modify(String str) {
         str += "World !";
     }
+
+    class Student {
+        public String name;
+    }
 }
 
-class Student {
-    public String name;
-}
+

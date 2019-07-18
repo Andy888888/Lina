@@ -22,18 +22,20 @@ public class Chihuo extends Thread {
         super.run();
         while (true) {
             synchronized (list) {
+                System.out.println("吃货检查有没有包子");
                 if (list.size() <= 0) {
                     try {
+                        System.out.println("没包子了，吃货等包子");
                         list.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
 
-                System.out.println("正在吃" + list.get(0) + "...");
+                System.out.println("有包子了，正在吃" + list.get(0) + "...");
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

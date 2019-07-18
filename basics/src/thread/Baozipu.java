@@ -24,13 +24,17 @@ public class Baozipu extends Thread {
         int count = 0;
         while (true) {
             synchronized (list) {
+                System.out.println("包子铺检查包子");
                 if (list.size() > 0) {
                     try {
+                        System.out.println("包子还有,包子铺先等等");
                         list.wait();
                     } catch (Exception ex) {
                         ex.printStackTrace();
                     }
                 }
+
+                System.out.println("包子没有了,包子铺开工");
 
                 list.add("包子" + count++);
                 System.out.println("给你 " + list.get(0));

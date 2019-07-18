@@ -3,7 +3,7 @@ package arithmetic;
 import core.MainLaunch;
 
 /**
- * 描述:待描述.
+ * 描述:打星星.
  * <p>
  *
  * @author yanwenqiang.

@@ -3,7 +3,7 @@ package structure;
 import core.MainLaunch;
 
 /**
- * 描述:待描述.
+ * 描述:移位运算解释示例代码.
  * <p>
  *
  * @author yanwenqiang.

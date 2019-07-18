@@ -5,7 +5,7 @@ import core.MainLaunch;
 import java.util.LinkedList;
 
 /**
- * 描述:待描述.
+ * 描述:ToString的使用.
  * <p>
  *
  * @author yanwenqiang.

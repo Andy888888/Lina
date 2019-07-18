@@ -1,6 +1,5 @@
 package com.ywqln;
 
-import arraylist.RemoveIf;
 import structure.OffsetDemo;
 
 /**
@@ -46,8 +45,7 @@ public class Main {
 //        new WebViewMainLaunch().start();
 
 //        new DBConnectionMain().start();
-
-//        new Connect().start();
+//        new ReferenceObject().start();
 
 //        new IntegerTest().start();
 
@@ -61,11 +59,8 @@ public class Main {
 //        new Permutation().start();
 
 //        new MobileDecodeUtil().start();
-
 //        new RemoveIf().start();
-
         new OffsetDemo().start();
-
 
     }
 

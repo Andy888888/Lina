@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 /**
- * 描述:待描述.
+ * 描述:Lambda表达式的使用和自定义Lambda示例.
  * <p>
  *
  * @author yanwenqiang.

@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 描述:待描述.
+ * 描述:线程里的安全锁,达到串行.
  * <p>
  *
  * @author yanwenqiang.

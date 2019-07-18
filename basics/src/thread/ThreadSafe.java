@@ -3,7 +3,7 @@ package thread;
 import core.MainLaunch;
 
 /**
- * 描述:待描述.
+ * 描述:线程安全.
  * <p>
  *
  * @author yanwenqiang.
