@@ -1,6 +1,7 @@
 package com.ywqln;
 
 import arraylist.RemoveIf;
+import structure.OffsetDemo;
 
 /**
  * 描述:应用程序入口
@@ -29,7 +30,6 @@ public class Main {
 
 
 //        new Login().start();
-        new RemoveIf().start();
 //        new Reversal().start();
 //        new FindMax().start();
 //        new Sort().start();
@@ -61,6 +61,11 @@ public class Main {
 //        new Permutation().start();
 
 //        new MobileDecodeUtil().start();
+
+//        new RemoveIf().start();
+
+        new OffsetDemo().start();
+
 
     }
 
