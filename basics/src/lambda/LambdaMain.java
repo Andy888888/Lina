@@ -59,6 +59,9 @@ public class LambdaMain extends MainLaunch {
         System.out.println("=======================");
 
 
+        method1(new Person(12), new Person(18), (a, b) -> new Person(a.money + b.money));
+
+
         List<Integer> list = new ArrayList();
         list.add(2);
         list.add(25);
@@ -90,7 +93,7 @@ public class LambdaMain extends MainLaunch {
     }
 
     private static void functionAndThen(Function<String, Integer> one, Function<Integer, Integer> two,
-                                      String str) {
+                                        String str) {
         int num = one.andThen(two).apply(str);
         System.out.println(num + 50);
     }
@@ -121,7 +124,32 @@ public class LambdaMain extends MainLaunch {
         System.out.println(reslut);
     }
 
+    private <T> void method1(T a, T b, Calc<T> calclator) {
+        T reslut = calclator.clac(a, b);
+        System.out.println(reslut);
+    }
+
+    private class Person {
+        public Person(int money) {
+            this.money = money;
+        }
+
+        public int money;
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "money=" + money +
+                    '}';
+        }
+    }
+
     interface Calclator {
         int clac(int a, int b);
+    }
+
+
+    interface Calc<T> {
+        T clac(T a, T b);
     }
 }
