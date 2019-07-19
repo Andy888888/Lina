@@ -1,6 +1,6 @@
 package com.ywqln;
 
-import structure.OffsetDemo;
+import integer.Convert;
 
 /**
  * 描述:应用程序入口
@@ -60,7 +60,8 @@ public class Main {
 
 //        new MobileDecodeUtil().start();
 //        new RemoveIf().start();
-        new OffsetDemo().start();
+//        new OffsetDemo().start();
+        new Convert().start();
 
     }
 

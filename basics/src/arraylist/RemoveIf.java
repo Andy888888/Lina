@@ -5,7 +5,7 @@ import core.MainLaunch;
 import java.util.ArrayList;
 
 /**
- * 描述:待描述.
+ * 描述:RemoveIf使用Demo.
  * <p>
  *
  * @author yanwenqiang.
