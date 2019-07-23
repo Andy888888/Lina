@@ -17,8 +17,8 @@ public class Convert extends MainLaunch {
 
     @Override
     public void start() {
-        System.out.println(convert2(255));
-        System.out.println(convert10("11111111"));
+        System.out.println(convert2(1024));
+        System.out.println(convert10("10000000000"));
     }
 
     private String convert2(int number) {
@@ -60,8 +60,9 @@ public class Convert extends MainLaunch {
 
         int plus = 0;
         for (int i = length - 1; i >= 0; i--) {
-            if (number.substring(i, i + 1).equals("1")) {
-                plus += sequence[i];
+            String item = number.substring(i, i + 1);
+            if (item.equals("1")) {
+                plus += sequence[length - 1 - i];
             }
         }
         return String.valueOf(plus);
